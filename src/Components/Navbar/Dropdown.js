@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import Overlay from "./Overlay";
 
 const Mobnav = () => {
@@ -49,12 +50,13 @@ const Mobnav = () => {
           <div className={mobtoggle.class}>
             <ul className='flex flex-col'>
               <li
-                href='#'
+                href='#skills'
                 className='m-3  text-xl bold-text p-3 font-semibold text-center'
                 onClick={handleonclick}
               >
                 About
               </li>
+
               <li
                 href='#'
                 className='m-3 text-xl bold-text p-3 font-semibold text-center'

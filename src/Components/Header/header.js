@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../svg/20943391.jpg";
+import img from "../../image/20943391.jpg";
 import { ColouredButton, PlainButton } from "./Button";
 
 const Header = () => {
