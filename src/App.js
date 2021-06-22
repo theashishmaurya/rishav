@@ -1,9 +1,10 @@
-
+import React from 'react'
+import Navbar from './Components/Navbar/Dropdown';
 
 function App() {
   return (
     <div className = "App">
-   <h1>Header</h1>
+  <Navbar/>
     </div>
   );
 }
