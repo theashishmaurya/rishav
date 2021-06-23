@@ -154,11 +154,11 @@ const DesktopNavbar = () => {
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(
-    window.matchMedia("(max-width:768px").matches
+    window.matchMedia("(max-width:1024px").matches
   );
   useEffect(() => {
     window.addEventListener("resize", () => {
-      setIsMobile(window.matchMedia("(max-width:768px").matches);
+      setIsMobile(window.matchMedia("(max-width:1024px").matches);
     });
   });
 
