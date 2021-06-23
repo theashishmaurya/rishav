@@ -1,7 +1,6 @@
 import React from "react";
 
 const Work = (props) => {
-  console.log(props);
   return (
     <div
       id={props.name}

@@ -9,15 +9,15 @@ const Mobnav = () => {
       block: "block",
     },
   });
-  const [active, setActive] = useState(false);
+  // const [active, setActive] = useState(false);
 
   const handleonclick = () => {
     if (mobtoggle.class === "hidden") {
       setMobtoggle({ ...mobtoggle, class: mobtoggle.toggle.block });
-      setActive(true);
+      // setActive(true);
     } else {
       setMobtoggle({ ...mobtoggle, class: mobtoggle.toggle.hidden });
-      setActive(false);
+      // setActive(false);
     }
   };
 
@@ -56,7 +56,7 @@ const Mobnav = () => {
                 spy={true}
                 smooth={true}
               >
-                Work
+                Home
               </Link>
               <Link
                 className='m-3  text-xl bold-text p-3 font-semibold text-center'
@@ -161,7 +161,6 @@ const Navbar = () => {
       setIsMobile(window.matchMedia("(max-width:768px").matches);
     });
   });
-  console.log(isMobile);
 
   return <div>{isMobile ? <Mobnav /> : <DesktopNavbar />}</div>;
 };
