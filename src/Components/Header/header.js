@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../../image/20943391.jpg";
 import { ColouredButton, PlainButton } from "./Button";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
@@ -24,10 +25,14 @@ const Header = () => {
         {/* buttons */}
         <div className='md:mt-35 mt-20'>
           <span>
-            <PlainButton />
+            <Link to='work' spy={true} smooth={true}>
+              <PlainButton />
+            </Link>
           </span>
           <span>
-            <ColouredButton />
+            <Link to='contact' spy={true} smooth={true}>
+              <ColouredButton />
+            </Link>
           </span>
         </div>
       </div>

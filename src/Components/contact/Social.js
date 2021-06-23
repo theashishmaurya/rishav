@@ -24,6 +24,15 @@ const Social = () => {
           </a>
         </span>
       </div>
+      <div className='mt-8'>
+        <span className='py-2 pl-0  ml-0'>
+          <a href=''>
+            <button className='border-2 p-3 px-2 rounded-md font-medium text-indigo-900 shadow-md'>
+              View Resume
+            </button>
+          </a>
+        </span>
+      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
-import { BrowserRouter, Route, Router } from "react-router-dom";
+
 import Contact from "./Components/contact/contact";
+import Footer from "./Components/footer/footer";
 import Header from "./Components/Header/header";
 import Navbar from "./Components/Navbar/Dropdown";
 import Projects from "./Components/Projects/project";
@@ -16,6 +17,7 @@ function App() {
       <Work name={"work"} />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
