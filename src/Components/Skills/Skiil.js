@@ -5,7 +5,7 @@ import mobile from "../../image/mobile.png";
 
 const Skills = () => {
   return (
-    <div id='skills' className='container p-2'>
+    <div id='skills' className='container p-2 px-4'>
       <div className='font-bold text-4xl mb-10'>
         <h1>What I do</h1>
       </div>

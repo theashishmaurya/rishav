@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter, Route, Router } from "react-router-dom";
 import Header from "./Components/Header/header";
 import Navbar from "./Components/Navbar/Dropdown";
+import Projects from "./Components/Projects/project";
 import Skills from "./Components/Skills/Skiil";
+import Work from "./Components/Work/Work";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Navbar />
       <Header />
       <Skills />
+      <Work />
+      <Projects />
     </div>
   );
 }
