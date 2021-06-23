@@ -1,6 +1,5 @@
-import { useState } from "react";
-
-import Overlay from "./Overlay";
+import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 
 const Mobnav = () => {
   const [mobtoggle, setMobtoggle] = useState({
@@ -48,55 +47,123 @@ const Mobnav = () => {
             </div>
           </div>
           <div className={mobtoggle.class}>
-            <ul className='flex flex-col'>
-              <li
-                href='#skills'
+            <ul className='flex flex-col h-screen'>
+              <Link
                 className='m-3  text-xl bold-text p-3 font-semibold text-center'
                 onClick={handleonclick}
+                to='home'
+                activeClass='active'
+                spy={true}
+                smooth={true}
               >
-                About
-              </li>
+                Work
+              </Link>
+              <Link
+                className='m-3  text-xl bold-text p-3 font-semibold text-center'
+                onClick={handleonclick}
+                to='work'
+                activeClass='active'
+                spy={true}
+                smooth={true}
+              >
+                Work
+              </Link>
 
-              <li
-                href='#'
+              <Link
+                to='project'
+                activeClass='active'
+                spy={true}
+                smooth={true}
                 className='m-3 text-xl bold-text p-3 font-semibold text-center'
                 onClick={handleonclick}
               >
-                Services
-              </li>
-              <li
-                href='#'
-                className='m-3  text-xl bold-text p-3 font-semibold text-center'
-                onClick={handleonclick}
-              >
-                Pricing
-              </li>
-              <li
-                href='#'
+                Projects
+              </Link>
+              <Link
+                to='contact'
+                activeClass='active'
+                spy={true}
+                smooth={true}
                 className='m-3  text-xl bold-text p-3 font-semibold text-center'
                 onClick={handleonclick}
               >
                 Contact
-              </li>
+              </Link>
             </ul>
           </div>
         </div>
       </nav>
-      {active ? (
+      {/* {active ? (
         <div onClick={handleonclick}>
           <Overlay />
         </div>
-      ) : null}
+      ) : null} */}
+    </div>
+  );
+};
+
+const DesktopNavbar = () => {
+  return (
+    <div>
+      <nav className='border-2 md:border-0 py-8'>
+        <div>
+          <ul className='flex flex-row justify-end mr-10  '>
+            <Link
+              className=' cursor-pointer mx-6 text-lg text-gray-500 bold-text hover:text-indigo-600  font-bold text-center'
+              to='home'
+              activeClass='active'
+              spy={true}
+              smooth={true}
+            >
+              Home
+            </Link>
+            <Link
+              className=' cursor-pointer mx-6 text-lg bold-text text-gray-500 hover:text-indigo-600  font-bold text-center'
+              to='work'
+              activeClass='active'
+              spy={true}
+              smooth={true}
+            >
+              Work
+            </Link>
+
+            <Link
+              to='project'
+              activeClass='active'
+              spy={true}
+              smooth={true}
+              className='cursor-pointer mx-6 text-lg bold-text text-gray-500 hover:text-indigo-600 font-bold text-center'
+            >
+              Projects
+            </Link>
+            <Link
+              to='contact'
+              activeClass='active'
+              spy={true}
+              smooth={true}
+              className='cursor-pointer mx-6 text-lg bold-text text-gray-500 hover:text-indigo-600  font-bold text-center'
+            >
+              Contact
+            </Link>
+          </ul>
+        </div>
+      </nav>
     </div>
   );
 };
 
 const Navbar = () => {
-  return (
-    <div>
-      <Mobnav />
-    </div>
+  const [isMobile, setIsMobile] = useState(
+    window.matchMedia("(max-width:768px").matches
   );
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setIsMobile(window.matchMedia("(max-width:768px").matches);
+    });
+  });
+  console.log(isMobile);
+
+  return <div>{isMobile ? <Mobnav /> : <DesktopNavbar />}</div>;
 };
 
 export default Navbar;

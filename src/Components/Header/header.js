@@ -4,7 +4,10 @@ import { ColouredButton, PlainButton } from "./Button";
 
 const Header = () => {
   return (
-    <div className='container grid grid-cols-1 md:grid-cols-2 gap-4 p-4 my-6'>
+    <div
+      className='container grid grid-cols-1 md:grid-cols-2 gap-4 p-4 my-6'
+      id='home'
+    >
       {/* Introduction div */}
       <div className='py-2 md:py-6 my-2 md:mt-20'>
         {/* Introductions */}

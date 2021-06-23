@@ -1,8 +1,12 @@
 import React from "react";
 
-const Work = () => {
+const Work = (props) => {
+  console.log(props);
   return (
-    <div className='container px-4 py-20  mb-10 md:pr-40 lg:pr-20 '>
+    <div
+      id={props.name}
+      className='container px-4 py-20  mb-10 md:pr-40 lg:pr-20 '
+    >
       <div className='text-4xl font-bold py-5 my-10'>Work Experience</div>
       {/* Project-1 starts */}
       <div className='grid grid-col-1 mt-20'>

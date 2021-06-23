@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Header />
       <Skills />
-      <Work />
+      <Work name={"work"} />
       <Projects />
       <Contact />
     </div>
