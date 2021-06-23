@@ -24,13 +24,13 @@ const Mobnav = () => {
 
   return (
     <div>
-      <nav className='border-2'>
+      <nav className='border-2 md:border-0 py-2'>
         <div className=' px-3 mx-2'>
-          <div className='flex flex-row justify-between'>
-            <div>
-              <h1 className='text-3xl uppercase'>Lg</h1>
-            </div>
-            <div className='order-last cursor-pointer	' onClick={handleonclick}>
+          <div className='flex flex-row justify-end'>
+            <div
+              className='order-last cursor-pointer p-1	'
+              onClick={handleonclick}
+            >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='h-6 w-6'
