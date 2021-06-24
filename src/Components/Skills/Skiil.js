@@ -7,8 +7,8 @@ const Skills = () => {
   return (
     <div className='bg-gray-100'>
       <div id='skills' className='container p-2 px-4 '>
-        <div className='font-bold text-4xl mb-10'>
-          <h1>What I do</h1>
+        <div className='font-bold text-4xl mb-10 my-10'>
+          <h1>Who I am</h1>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-1 justify-center'>
           {/* frontend Developer */}
