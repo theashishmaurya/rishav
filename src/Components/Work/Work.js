@@ -4,7 +4,7 @@ const Work = (props) => {
   return (
     <div
       id={props.name}
-      className='container px-4 py-20  mb-10 md:pr-40 lg:pr-20 '
+      className='container px-4 py-10  mb-10 md:pr-40 lg:pr-20 '
     >
       <div className='text-4xl font-bold py-5 my-10'>Work Experience</div>
       {/* Project-1 starts */}

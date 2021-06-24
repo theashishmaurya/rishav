@@ -1,6 +1,7 @@
 import React from "react";
 import instagram from "../../image/instagram.svg";
 import github from "../../image/github.svg";
+import resume from "../../Resume.pdf";
 const Social = () => {
   return (
     <div>
@@ -26,9 +27,11 @@ const Social = () => {
       </div>
       <div className='mt-8'>
         <span className='py-2 pl-0  ml-0'>
-          <button className='border-2 p-3 px-2 rounded-md font-medium text-indigo-900 shadow-md'>
-            View Resume
-          </button>
+          <a href={resume}>
+            <button className='border-2 p-3 px-2 rounded-md font-medium text-indigo-900 shadow-md'>
+              View Resume
+            </button>
+          </a>
         </span>
       </div>
     </div>
