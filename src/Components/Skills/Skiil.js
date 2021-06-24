@@ -17,7 +17,7 @@ const Skills = () => {
               <img src={frontend} alt='' />
             </div>
             <div>
-              <div className='text-2xl font-medium my-10'>Aws Enthusiast</div>
+              <div className='text-2xl font-medium my-10'>AWS Enthusiast</div>
             </div>
           </div>
           {/* Backend developer */}
