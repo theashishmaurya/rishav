@@ -63,7 +63,7 @@ const ContactForm = () => {
         />
         <input
           className='p-4 my-6 pl-6 shadow-md rounded-xl placeholder-gray-500 border min-w-full min-h-full border-1 tracking-wide  focus:outline-none placeholder-opacity-75 text-xl focus:ring-2 focus:ring-indigo-600 focus:border-transparent ... '
-          placeholder='email :jonh@email.com*'
+          placeholder='jonh@email.com*'
           value={email}
           onChange={handleOnChange("email")}
         />
