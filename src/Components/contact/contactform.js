@@ -10,7 +10,7 @@ const ContactForm = () => {
     feedback: "",
   });
   const { firstName, lastName, email, feedback } = data;
-  const ID = process.env.REACT_APP_EMAILJS_ID;
+  const ID = "user_7gPPVSh9nSVnSuVyg0fhJ";
 
   useEffect(() => {
     init(ID);
@@ -23,7 +23,7 @@ const ContactForm = () => {
     event.preventDefault();
     console.log(data);
     const serviceID = "Rishav";
-    const templateID = "template_4ybn29f";
+    const templateID = "template_zoz9ypq";
     const templateParams = {
       to_name: "ADMIN",
       from_name: `${firstName} ${lastName}`,
