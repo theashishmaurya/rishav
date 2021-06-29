@@ -4,7 +4,7 @@ import Logo from "../../image/Logo.png";
 
 const Mobnav = () => {
   const [mobtoggle, setMobtoggle] = useState({
-    class: "hidden",
+    class: "hidden ",
     toggle: {
       hidden: "hidden",
       block: "block",
@@ -24,10 +24,10 @@ const Mobnav = () => {
 
   return (
     <div>
-      <nav className='border-2 md:border-0 py-2'>
+      <nav className='borderb-2 md:border-0 py-2 absolute max-w-full min-w-full bg-white overflow-hidden '>
         <div className=' px-3 mx-2'>
-          <div className='grid'>
-            <div className=''>
+          <div className='grid '>
+            <div>
               <span>
                 <img className='w-10 m-auto' src={Logo} alt='' />
               </span>
@@ -168,7 +168,11 @@ const Navbar = () => {
       setIsMobile(window.matchMedia("(max-width:768px").matches);
     });
   });
-
+  // return (
+  //   <div>
+  //     <Mobnav />
+  //   </div>
+  // );
   return <div>{isMobile ? <Mobnav /> : <DesktopNavbar />}</div>;
 };
 

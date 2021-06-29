@@ -12,6 +12,7 @@ function App() {
   return (
     <div className='App text-gray-900 font-sans'>
       <Navbar />
+
       <Header />
       <Skills />
       <Work name={"work"} />
