@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 const Header = () => {
   return (
     <div
-      className='container grid grid-cols-1 md:grid-cols-2 gap-4 p-4 my-6 py-10'
+      className='container grid grid-cols-1 md:grid-cols-2 gap-4 p-4 my-6 pt-20 md:pt-4 '
       id='home'
     >
       {/* Introduction div */}
